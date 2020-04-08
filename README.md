@@ -36,4 +36,4 @@ In the search form, submit the following search terms to check the different res
     broom' UNION SELECT * FROM products; --
 
 ## Credits
-Code adapted from (https://www.codingame.com/playgrounds/154/sql-injection-demo/sql-injection)[https://www.codingame.com/playgrounds/154/sql-injection-demo/sql-injection].
+Code adapted from [https://www.codingame.com/playgrounds/154/sql-injection-demo/sql-injection](https://www.codingame.com/playgrounds/154/sql-injection-demo/sql-injection).
