@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<form action="/" method="post">
+  <div class="container">
+    <label><b>Search</b></label>
+    <input type="text" placeholder="search for..." name="term" value="{{term}}">
+    <button type="submit">Search</button>
+  </div>
+</form>
+
+{{#if products}}
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Coins ($)</th>
+  </tr>
+  {{#each products}}
+  <tr>
+    <td>{{this.name}}</td>
+    <td>{{this.description}}</td>
+    <td>{{this.coins}}</td>
+  </tr>
+  {{/each}}
+</table>
+{{/if}}
+
+
+<script>
+    if(document.location.hash === '#unauthorized') {
+        document.write('<div class="unauthorized">Invalid Username or Password</div>');
+    } else if(document.location.hash === '#error') {
+        document.write('<div class="error">An error has occured</div>');
+    }
+</script>
+
+</body>
+</html>
